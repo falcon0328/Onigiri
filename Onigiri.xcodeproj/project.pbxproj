@@ -17,6 +17,11 @@
 		D24DE35D1FBAAC760006DF9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24DE35B1FBAAC760006DF9E /* LaunchScreen.storyboard */; };
 		D24DE3681FBAAC760006DF9E /* OnigiriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24DE3671FBAAC760006DF9E /* OnigiriTests.swift */; };
 		D24DE3731FBAAC760006DF9E /* OnigiriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24DE3721FBAAC760006DF9E /* OnigiriUITests.swift */; };
+		D24DE3821FBAB2B40006DF9E /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24DE3801FBAB2B40006DF9E /* UIViewControllerExtension.swift */; };
+		D24DE3831FBAB2B40006DF9E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24DE3811FBAB2B40006DF9E /* UIColorExtension.swift */; };
+		D24DE3871FBAB2C20006DF9E /* ExTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24DE3841FBAB2C20006DF9E /* ExTableViewController.swift */; };
+		D24DE3881FBAB2C20006DF9E /* ExNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24DE3851FBAB2C20006DF9E /* ExNavigationViewController.swift */; };
+		D24DE3891FBAB2C20006DF9E /* ExTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24DE3861FBAB2C20006DF9E /* ExTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,11 @@
 		D24DE36E1FBAAC760006DF9E /* OnigiriUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnigiriUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24DE3721FBAAC760006DF9E /* OnigiriUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnigiriUITests.swift; sourceTree = "<group>"; };
 		D24DE3741FBAAC760006DF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D24DE3801FBAB2B40006DF9E /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		D24DE3811FBAB2B40006DF9E /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		D24DE3841FBAB2C20006DF9E /* ExTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExTableViewController.swift; sourceTree = "<group>"; };
+		D24DE3851FBAB2C20006DF9E /* ExNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExNavigationViewController.swift; sourceTree = "<group>"; };
+		D24DE3861FBAB2C20006DF9E /* ExTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExTabBarController.swift; sourceTree = "<group>"; };
 		EBF88E551974D99BC5C12756 /* Pods-OnigiriUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnigiriUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnigiriUITests/Pods-OnigiriUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FB76A9B8C293E1AC5D4D9809 /* Pods-Onigiri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Onigiri.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Onigiri/Pods-Onigiri.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +147,11 @@
 		D24DE3511FBAAC760006DF9E /* Onigiri */ = {
 			isa = PBXGroup;
 			children = (
+				D24DE3801FBAB2B40006DF9E /* UIViewControllerExtension.swift */,
+				D24DE3811FBAB2B40006DF9E /* UIColorExtension.swift */,
+				D24DE3841FBAB2C20006DF9E /* ExTableViewController.swift */,
+				D24DE3851FBAB2C20006DF9E /* ExNavigationViewController.swift */,
+				D24DE3861FBAB2C20006DF9E /* ExTabBarController.swift */,
 				D24DE3521FBAAC760006DF9E /* AppDelegate.swift */,
 				D24DE3541FBAAC760006DF9E /* ViewController.swift */,
 				D24DE3561FBAAC760006DF9E /* Main.storyboard */,
@@ -451,6 +466,11 @@
 			files = (
 				D24DE3551FBAAC760006DF9E /* ViewController.swift in Sources */,
 				D24DE3531FBAAC760006DF9E /* AppDelegate.swift in Sources */,
+				D24DE3821FBAB2B40006DF9E /* UIViewControllerExtension.swift in Sources */,
+				D24DE3871FBAB2C20006DF9E /* ExTableViewController.swift in Sources */,
+				D24DE3881FBAB2C20006DF9E /* ExNavigationViewController.swift in Sources */,
+				D24DE3831FBAB2B40006DF9E /* UIColorExtension.swift in Sources */,
+				D24DE3891FBAB2C20006DF9E /* ExTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
