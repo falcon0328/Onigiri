@@ -9,6 +9,43 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--メモ-->
+        <scene sceneID="A75-IX-dTi">
+            <objects>
+                <viewController id="gbB-m7-ztl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gfC-vP-7bc"/>
+                        <viewControllerLayoutGuide type="bottom" id="CXe-TG-mfN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gGx-Mr-3Mw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Wdt-pD-hdi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wdt-pD-hdi" firstAttribute="top" secondItem="gGx-Mr-3Mw" secondAttribute="top" id="4xS-7H-wdp"/>
+                            <constraint firstItem="CXe-TG-mfN" firstAttribute="top" secondItem="Wdt-pD-hdi" secondAttribute="bottom" id="7fx-3l-YAs"/>
+                            <constraint firstItem="Wdt-pD-hdi" firstAttribute="leading" secondItem="gGx-Mr-3Mw" secondAttribute="leading" id="gqO-K2-iaR"/>
+                            <constraint firstAttribute="trailing" secondItem="Wdt-pD-hdi" secondAttribute="trailing" id="mD8-Kl-ekc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="メモ" id="wKn-DJ-WxA">
+                        <barButtonItem key="leftBarButtonItem" title="クリア" id="ewo-1H-Mvf"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="WjI-Ir-nKM"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qpF-V5-het" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1976.8" y="-559.07046476761627"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -28,11 +65,11 @@
             </objects>
             <point key="canvasLocation" x="1977" y="112"/>
         </scene>
-        <!--通信-->
+        <!--機能-->
         <scene sceneID="spM-uH-FO8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4ss-Je-Qti" customClass="ExNavigationViewController" customModule="Onigiri" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="通信" image="connecting" id="vhW-4K-S5u"/>
+                    <tabBarItem key="tabBarItem" title="機能" image="function" selectedImage="function" id="vhW-4K-S5u"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yff-1O-rte">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -57,6 +94,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <segue destination="6wk-Qe-Dhz" kind="relationship" relationship="viewControllers" id="AfM-Ah-Xdf"/>
                         <segue destination="4ss-Je-Qti" kind="relationship" relationship="viewControllers" id="KJH-sK-hJ1"/>
                         <segue destination="KNY-6G-2Oq" kind="relationship" relationship="viewControllers" id="5wV-n4-3nb"/>
                     </connections>
@@ -87,7 +125,7 @@
         <!--その他-->
         <scene sceneID="a86-Yg-bVk">
             <objects>
-                <tableViewController id="CqF-hm-lbX" sceneMemberID="viewController">
+                <tableViewController id="CqF-hm-lbX" customClass="ExTableViewController" customModule="Onigiri" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="YzY-jv-m7f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,7 +137,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jRh-Hb-0YD" id="BxP-aX-akI">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Onigiriについて" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0g-yl-sBA">
@@ -111,6 +149,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ytU-xh-G68" kind="show" id="1c3-Bg-mHc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -126,9 +167,47 @@
             </objects>
             <point key="canvasLocation" x="1976.8" y="801.94902548725645"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="T8t-xu-zak">
+            <objects>
+                <viewController id="ytU-xh-G68" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R6K-XB-jYX"/>
+                        <viewControllerLayoutGuide type="bottom" id="cWM-GU-iwx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vKc-uu-Ido">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6BI-KT-IWs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2780" y="802"/>
+        </scene>
+        <!--メモ-->
+        <scene sceneID="pwy-pK-qZa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6wk-Qe-Dhz" customClass="ExNavigationViewController" customModule="Onigiri" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="メモ" image="memo" selectedImage="memo" id="RdM-JP-sXy"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rgv-EX-K83">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gbB-m7-ztl" kind="relationship" relationship="rootViewController" id="DGT-1j-8oO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TWz-XH-OET" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="-559"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="connecting" width="25" height="25"/>
+        <image name="function" width="25" height="25"/>
+        <image name="memo" width="25" height="25"/>
         <image name="note" width="25" height="25"/>
     </resources>
 </document>
